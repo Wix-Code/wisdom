@@ -1,0 +1,168 @@
+.navbar{
+  background: rgba(46, 143, 46, 0.993);
+  padding: 30px 0;
+  width: 100%;
+  position: sticky;
+  z-index: 99;
+  top: 0;
+}
+.nav{
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.navbar1{
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+.navbar1 span{
+  font-size: 45px;
+}
+.navbar2{
+  display: flex;
+  text-transform: uppercase;
+  margin: 20px;
+  font-size: 18px;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+.navbar2 .menu{
+  display: flex;
+  gap: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.navbar2 .log{
+  display: flex;
+  gap: 5px;
+  border-left: 2px solid white;  
+  border-right: 2px solid #ffffff;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.navbar2 .cont{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  padding: 10px 15px;
+  justify-content: center;
+}
+.navbar3{
+  display: flex;
+  font-size: 18px;
+  gap: 20px;
+  align-items: center;
+}
+.phone a h4{
+  color: white;
+}
+.navbar3 .cart, .navbar3 .phone{
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+}
+.bar{
+  display: none;
+}
+.bar button{
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.navbar2 .phone, .navbar2 .cart{
+  display: none;
+}
+@media screen and (max-width : 750px) {
+  .navbar{
+    padding: 10px 20px;
+    position: sticky;
+    z-index: 99;
+    top: 0;
+  }
+
+  .navbar2,.navbar3{
+    display: none;
+  }
+  .bar{
+    display: flex;
+  }
+  .navres{
+    position: absolute;
+    top: 75px;
+    transition: 0.5s;
+    transform: rotate3d(6px);
+    width: 100%;
+    background: red;
+    padding: 20px;
+    text-transform: uppercase;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 60vh;
+  }
+  .navres .menu, .navres .log, .navres .cont, .navres .cart, .navres .phone{
+    display: flex;
+    width: max-content;
+    gap: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width : 950px)and (min-width : 750px){
+  .navbar{
+    padding: 10px 20px;
+    position: sticky;
+    z-index: 99;
+    top: 0;
+  }
+  .navbar2,.navbar3{
+    display: none;
+  }
+  .bar{
+    display: flex;
+  }
+  .navres{
+    position: absolute;
+    top: 75px;
+    transition: 0.5s;
+    transform: rotate3d(6px);
+    width: 100%;
+    background: red;
+    padding: 20px;
+    text-transform: uppercase;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 60vh;
+  }
+  .navres .menu, .navres .log, .navres .cont, .navres .cart, .navres .phone{
+    display: flex;
+    width: max-content;
+    gap: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width : 1024px) and (min-width : 950px){
+  .navbar{
+    padding: 20px;
+    position: sticky;
+    z-index: 99;
+    top: 0;
+  }
+  
+}

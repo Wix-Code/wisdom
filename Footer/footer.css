@@ -1,0 +1,122 @@
+.footer{
+  width: 100%;
+  background: rgba(46, 143, 46, 0.993);
+}
+.foot{
+  max-width: 1100px;
+  margin: auto;
+  color: white;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.foot1, .foot2, .foot3{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+.foot1 h1 span{
+  font-size: 45px;
+}
+.foot1 h1{
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+.foot2{
+  text-align: center;
+  border-left: 2px white dotted;
+  border-right: 2px white dotted;
+  padding: 0px 30px;
+}
+.foot21{
+  display: flex;
+  text-transform: uppercase;
+}
+.foot21 p{
+  padding: 0px 20px;
+  border-right: white solid 2px;
+  cursor: pointer;
+}
+.foot21 p:hover{
+  text-decoration: underline;
+  transition: 0.5s;
+}
+.foot3 h1, .foot2 h1{
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 25px;
+}
+.foot33{
+  display: flex;
+  gap: 20px;
+  font-size: 50px;
+}
+.foot33 span{
+  text-align: center;
+  color: white;
+}
+.foot33 span:hover{
+  color: rgb(17, 17, 17);
+  transition: 0.6s;
+}
+
+@media screen and (max-width : 300px){
+  .foot21 p{
+    font-size: 10px;
+  }
+  .foot33{
+    font-size: 30px;
+  }
+  .foot3 h1, .foot2 h1{
+    font-size: 20px;
+  }
+  .foot1{
+    font-size: 12px;
+  }
+}
+@media screen and (max-width : 950px) {
+  .foot{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .foot1, .foot3,.foot2{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .foot2{
+    border-top: dotted white 2px ;
+    border-bottom: 2px white dotted;
+    border-left: none;
+    border-right: none;
+  }
+  .foot2 h1{
+    margin-top: 20px;
+  }
+  .foot21{
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width : 1024px) {
+  .foot{
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+  }
+  .foot1, .foot3,.foot2{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .foot2{
+    
+    padding: 0 30px;
+  }
+}
